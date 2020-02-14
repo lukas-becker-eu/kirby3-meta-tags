@@ -1,0 +1,15 @@
+type: group
+fields:
+  date:
+    type: date
+    time: true
+    default: now
+  author:
+    type: users
+  tags:
+    type: tags
+    options: query
+    query:
+      fetch: site.tags.toStructure.sortBy("name", "asc")
+      text: "{{ structureItem.name }}"
+      value: "{{ structureItem.value }}"

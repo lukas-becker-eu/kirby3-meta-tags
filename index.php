@@ -10,5 +10,8 @@ Kirby::plugin('candyblue/kirby-v3-head', [
     'head/google' => __DIR__ . '/snippets/head/google.php',
     'head/json-ld' => __DIR__ . '/snippets/head/json-ld.php',
     'head/preconnect' => __DIR__ . '/snippets/head/preconnect.php'
+  ],
+  'blueprints' => [
+    'fields/head' => __DIR__ . '/blueprints/fields/head.yml'
   ]
 ]);

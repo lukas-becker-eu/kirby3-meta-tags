@@ -1,0 +1,10 @@
+label:
+  de: Metadaten
+  en: Meta data
+icon: search
+fields:
+
+  meta:
+    type: fields
+    fields:
+      seo: fields/seo

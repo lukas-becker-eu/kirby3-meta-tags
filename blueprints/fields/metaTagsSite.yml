@@ -1,0 +1,12 @@
+type: group
+fields:
+
+  metaTagsFavicon:
+    label: Favicon
+    type: files
+    width: 1/2
+
+  metaTagsTouchIcon:
+    label: Touch Icon
+    type: files
+    width: 1/2

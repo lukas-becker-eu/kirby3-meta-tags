@@ -1,0 +1,59 @@
+type: group
+fields:
+
+  metaTagsTitle:
+    label:
+      de: SEO Titel
+      en: SEO title
+    type: text
+    maxLength: 72
+    placeholder: "{{ page.title }} - {{ site.title }}"
+
+  metaTagsDescription:
+    label:
+      de: Meta Beschreibung
+      en: Meta description
+    type: textarea
+    size: small
+    buttons: false
+    maxLength: 155
+
+  metaTagsRobots:
+    label:
+      de: Robots
+      en: Robots
+    type: select
+    default: nofollow-noindex
+    options:
+      index-follow: index, follow
+      index-nofollow: index, nofollow
+      noindex-follow: noindex, follow
+      noindex-nofollow: noindex, nofollow
+    width: 1/2
+
+  metaTagsOgTitle:
+    label: 'og:title'
+    type: text
+    maxLength: 95
+
+  metaTagsOgDescription:
+    label: 'og:description'
+    type: textarea
+    size: small
+    buttons: false
+    maxLength: 297
+
+  metaTagsOgImage:
+    label: 'og:image'
+    type: files
+    multiple: false
+    width: 1/2
+    help: 'Empfohlene Größe: 1200x630px'
+
+  metaTagsOgType:
+    label: 'og:type'
+    type: select
+    options:
+      website: Website
+      article: Article
+    width: 1/2
